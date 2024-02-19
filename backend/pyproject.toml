@@ -1,0 +1,18 @@
+[project]
+name = "TasteBud"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "bagoviggo", email = "bagoviggo@gmail.com"},
+]
+dependencies = [
+    "django>=3.2.24",
+    "djangorestframework>=3.14.0",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
