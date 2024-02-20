@@ -1,5 +1,5 @@
 """
-ASGI config for taste_bud project.
+ASGI config for taste_n_rate project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taste_bud.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taste_n_rate.settings')
 
 application = get_asgi_application()

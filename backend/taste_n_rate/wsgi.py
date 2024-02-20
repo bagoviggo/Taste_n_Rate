@@ -1,5 +1,5 @@
 """
-WSGI config for taste_bud project.
+WSGI config for taste_n_rate project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taste_bud.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taste_n_rate.settings')
 
 application = get_wsgi_application()
