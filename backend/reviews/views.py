@@ -1,7 +1,8 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework import permissions
-from reviews.serializers import UserSerializer, GroupSerializer
+from reviews.serializers import *
+from reviews.models import Review, Category, Business
 
 class UserViewSet(viewsets.ModelViewSet):
 	queryset = User.objects.all().order_by('-date_joined')
@@ -13,3 +14,20 @@ class GroupViewSet(viewsets.ModelViewSet):
 	serializer_class = GroupSerializer
 	permission_classes = [permissions.IsAuthenticated]
 
+
+class ReviewViewSet(viewsets.ModelViewSet):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
+class CategoryViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
+class BusinessViewSet(viewsets.ModelViewSet):
+    queryset = Business.objects.all()
+    serializer_class = BusinessSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
