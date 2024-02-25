@@ -16,3 +16,6 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+[tool.pyright]
+extraPaths = ["__pypackages__/<major.minor>/lib/"]
+
