@@ -1,9 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles/restaurant.module.css";
 import Filters from "./Filter/Filters";
+import RestaurantCard from "./RestaurantCard";
 
 function Restaurants() {
+  const [numCards, setNumCards] = useState(3);
+
+  function showMore() {
+    setNumCards(numCards + 3);
+  }
+
   return (
     <>
       <div className={styles.main_content}>
@@ -14,8 +21,14 @@ function Restaurants() {
               Sort: <strong>Recommened</strong>
             </p>
           </div>
-          <div className={styles.filters}>
-            <Filters />
+          <Filters />
+          <div className={styles.restaurant_cards}>
+            <div className={styles.restaurant_unit}>
+              {Array.from({ length: numCards }, (_, index) => (
+                <RestaurantCard key={index} />
+              ))}
+            </div>
+            <button onClick={showMore}>Show more posts</button>
           </div>
         </div>
         <div className={styles.map}>

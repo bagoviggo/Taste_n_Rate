@@ -3,42 +3,58 @@ import styles from "./styles/price.module.css";
 
 function Price() {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState("All Prices");
+  const [selected, setSelected] = useState("Prices");
 
   function toggleDropdown() {
     setIsOpen(!isOpen);
   }
   return (
     <>
-      <div></div>
-      <div className={styles.search}>
-        <input
-          type="text"
-          value={selected}
-          placeholder="Search..."
-          onClick={toggleDropdown}
-        />
+      <div className={styles.prices}>
+        <input type="text" value={selected} onClick={toggleDropdown} />
         <div>
           {isOpen && (
             <div className={styles.dropdown}>
-              <option defaultValue="All Prices">All</option>
-              <option value="$" onClick={(e) => setSelected(e.target.value)}>
-                $
-              </option>
-              <option value="$$" onClick={(e) => setSelected(e.target.value)}>
-                $$
-              </option>
-              <option value="$$$" onClick={(e) => setSelected(e.target.value)}>
-                $$$
-              </option>
-              <option
-                value="$$$$"
-                onClick={(e) => setSelected(e.target.value)}
-                // onMouseEnter={(e) => setSelected(e.target.value)}
-                // onMouseLeave={() => setSelected(null)}
-              >
-                $$$$
-              </option>
+              <div className={styles.price}>
+                <input
+                  type="checkbox"
+                  className={styles.checkbox}
+                  id="price"
+                  value="$"
+                  onClick={(e) => setSelected(e.target.value)}
+                />
+                <label htmlFor="price">$</label>
+              </div>
+              <div className={styles.price}>
+                <input
+                  type="checkbox"
+                  className={styles.checkbox}
+                  id="price"
+                  value="$$"
+                  onClick={(e) => setSelected(e.target.value)}
+                />
+                <label htmlFor="price">$$</label>
+              </div>
+              <div className={styles.price}>
+                <input
+                  type="checkbox"
+                  className={styles.checkbox}
+                  id="price"
+                  value="$$$"
+                  onClick={(e) => setSelected(e.target.value)}
+                />
+                <label htmlFor="price">$$$</label>
+              </div>
+              <div className={styles.price}>
+                <input
+                  type="checkbox"
+                  className={styles.checkbox}
+                  id="price"
+                  value="$$$$"
+                  onClick={(e) => setSelected(e.target.value)}
+                />
+                <label htmlFor="price">$$$$</label>
+              </div>
             </div>
           )}
         </div>
