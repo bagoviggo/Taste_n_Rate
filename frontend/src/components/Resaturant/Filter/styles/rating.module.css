@@ -11,7 +11,7 @@
   margin-top: 8px;
 }
 
-.prices input {
+.search input {
   padding: 4px;
   border-radius: 16px;
   color: #000;
@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.prices input:focus {
+.search input:focus {
   outline: none;
 }
 
@@ -33,7 +33,7 @@
   display: inline-block;
 }
 
-.price {
+.rate {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -42,7 +42,7 @@
   border-radius: 8px;
 }
 
-.price:hover {
+.rate:hover {
   cursor: pointer;
   background-color: #f1f1f1;
 }
