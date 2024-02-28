@@ -17,9 +17,11 @@ function Landing() {
             <h1 className={styles.contentHeading}>
               Taste and rate the best meals in the world.
             </h1>
-            <button type="button" className={styles.button}>
-              Write a Review
-            </button>
+            <a href="/review">
+              <button type="button" className={styles.button}>
+                Write a Review
+              </button>
+            </a>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -28,9 +30,11 @@ function Landing() {
             <h1 className={styles.contentHeading}>
               Your opinion matters to others.
             </h1>
-            <button type="button" className={styles.button}>
-              Write a Review
-            </button>
+            <a href="/review">
+              <button type="button" className={styles.button}>
+                Write a Review
+              </button>
+            </a>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -39,9 +43,11 @@ function Landing() {
             <h1 className={styles.contentHeading}>
               Your rating can help others to find the best meal.
             </h1>
-            <button type="button" className={styles.button}>
-              Write a Review
-            </button>
+            <a href="/review">
+              <button type="button" className={styles.button}>
+                Write a Review
+              </button>
+            </a>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -50,9 +56,11 @@ function Landing() {
             <h1 className={styles.contentHeading}>
               Eat and leave a rate for your meal.
             </h1>
-            <button type="button" className={styles.button}>
-              Write a Review
-            </button>
+            <a href="/review">
+              <button type="button" className={styles.button}>
+                Write a Review
+              </button>
+            </a>
           </div>
         </div>
       </Carousel>

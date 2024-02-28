@@ -79,3 +79,95 @@
   color: #fff;
   text-align: left;
 }
+
+.restaurant_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  gap: 10px;
+  align-items: center;
+}
+
+.restaurant_details h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: left;
+  margin-top: 64px;
+  padding: 10px;
+}
+
+.restaurant_details h3 {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.restaurant_details p {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 4px;
+  text-align: left;
+}
+
+.opening_info {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+  margin: 100px auto;
+}
+
+.opentime {
+  min-width: 280px;
+  max-width: 360px;
+  min-height: 300px;
+  max-height: 360px;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.foods,
+.drinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 100px auto;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.drink,
+.food {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  min-width: 280px;
+  max-width: 360px;
+  min-height: 300px;
+  max-height: 360px;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+}
+
+.menu_icon {
+  color: #002fff;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 4px;
+}
