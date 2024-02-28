@@ -17,9 +17,6 @@ function Restaurants() {
         <div className={styles.restaurant_container}>
           <div className={styles.heading}>
             <h1>The Best Restaurants in Taihuang</h1>
-            <p className={styles.sort}>
-              Sort: <strong>Recommened</strong>
-            </p>
           </div>
           <Filters />
           <div className={styles.restaurant_cards}>

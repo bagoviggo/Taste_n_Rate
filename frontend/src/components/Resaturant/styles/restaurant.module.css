@@ -11,7 +11,6 @@
   max-width: 700px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   gap: 20px;
 }
 
@@ -27,7 +26,6 @@
   font-weight: 800;
   color: #000;
   text-align: left;
-  max-width: 700px;
 }
 
 .sort {
